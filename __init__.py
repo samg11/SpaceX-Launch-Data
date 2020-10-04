@@ -2,8 +2,6 @@ from flask import Flask, render_template, url_for, flash, redirect
 
 app = Flask(__name__)
 
-visits = 0
-
 @app.route('/')
 def index():
     return render_template('index.html', script="index.js", name="Home Page")
