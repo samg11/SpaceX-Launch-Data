@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Rockets{% endblock %}
+{% block header %}
+<h1 id="name"></h1>
+{% endblock %}
+{% block content %}
+<style>body{overflow-y:scroll;}</style>
+
+
+<div id="nextLaunchContent">
+    <h3 id="pricePerLaunch">Cost Per Launch: $</h3>
+    <h3 id="height">Height: </h3>
+    <h3 id="stages">Stages: </h3>
+</div>
+
+<div class="card" style="position:absolute;bottom:0;width:100%;height:200px;">
+    <h5 class="card-header">Description</h5>
+    <div class="card-body">
+        <h5 id="desc" class="card-title"></h5>
+        
+    </div>
+</div>
+
+
+<p id="rocketName" style="display:none;">{{ rocket }}</p>
+{% endblock %}

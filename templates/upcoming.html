@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Upcoming Launches{% endblock %}
+{% block header %}
+<h1>Upcoming Launches</h1>
+{% endblock %}
+{% block content %}
+<style>body{overflow-y:scroll;}</style>
+<table style="margin-top:2%;" class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Mission Name</th>
+        <th scope="col">Rocket Name</th>
+      </tr>
+    </thead>
+    <tbody id="upcomingTableBody">
+    </tbody>
+</table>
+{% endblock %}

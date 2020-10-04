@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block header %}
+<h1>SpaceX Launch Data</h1>
+<h3>By Sam Girshovich</h3>
+{% endblock %}
+{% block content %}
+
+<a href="{{ url_for('next') }}" style="margin-top:1%;" class="fluid ui button">Next Launch</a>
+<a href="/upcoming" style="margin-top:1%;" class="fluid ui button">Upcoming Launches</a>
+<a href="/rockets" style="margin-top:1%;" class="fluid ui button square">Rockets</a>
+
+{% endblock %}

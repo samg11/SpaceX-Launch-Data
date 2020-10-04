@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Rockets{% endblock %}
+{% block header %}
+<h1>Rockets</h1>
+{% endblock %}
+{% block content %}
+<script>console.log("{{ rocket }}")</script>
+<style>body{overflow-y:scroll;}</style>
+<div id="rocketList" class="list-group"></div>
+
+{% endblock %}
